@@ -27,8 +27,11 @@ pyRandExif is a command-line tool that adds random EXIF data, including GPS coor
 
 ## Usage
 
-After installing the package, you can use the `pyRandExif` command in your terminal:
+After installing the package, you can use the `pyrandexif` command in your terminal:
 ### Example
+```sh
+pyrandexif <image path> <output path> <images to generate>
+```
 ```sh
 pyrandexif /path/to/image.jpg /path/to/destination_folder 5
 ```
