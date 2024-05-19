@@ -42,3 +42,8 @@ This command will generate 5 images with random EXIF data in the specified desti
 ## Dependencies
 - [Pillow](https://python-pillow.org/)
 - [piexif](https://github.com/hMatoba/piexif)
+
+
+# Future Features
+- Multi-Threading
+- Location & DateTime Limits / Ranges
