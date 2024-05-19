@@ -17,7 +17,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "pyRandExif=pyRandExif.main:main",
+            "pyrandexif=pyRandExif.main:main",
         ],
     },
     classifiers=[

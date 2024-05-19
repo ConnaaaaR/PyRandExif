@@ -1,9 +1,9 @@
-import argparse
-import os
-import random
 from datetime import datetime, timedelta
+from argparse import ArgumentParser
 from PIL import Image
+import random
 import piexif
+import os
 
 
 def add_random_exif(image_path, dest_folder, count):
@@ -26,7 +26,7 @@ def add_random_exif(image_path, dest_folder, count):
         exif_dict = piexif.load(image.info["exif"])
 
         # Generate random GPS coordinates
-        lat = random.uniform(-90, 90)
+        lat = random.uniform(-75, 75)
         lon = random.uniform(-180, 180)
 
         exif_dict["GPS"][piexif.GPSIFD.GPSLatitudeRef] = b"N" if lat >= 0 else b"S"
@@ -72,7 +72,7 @@ def to_deg(value):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Add random EXIF data to an image.")
+    parser = ArgumentParser(description="Add random EXIF data to an image.")
     parser.add_argument("image_path", type=str, help="Path to the image file.")
     parser.add_argument(
         "dest_folder", type=str, help="Destination folder to save images."
