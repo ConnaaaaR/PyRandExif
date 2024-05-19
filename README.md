@@ -2,6 +2,8 @@
 
 pyRandExif is a command-line tool that adds random EXIF data, including GPS coordinates and timestamps, to an image file. This tool is useful for testing, anonymization, and other purposes where random EXIF data might be needed.
 
+**This program contains no warnings or validation to stop the user from making huge outputs.**
+
 ## Features
 
 - Adds random GPS coordinates to the image EXIF data.
